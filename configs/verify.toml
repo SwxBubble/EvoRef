@@ -1,0 +1,8 @@
+task = "verify_all"
+chunk_data_path = "./artifacts/evoref.data"
+chunk_meta_path = "./artifacts/evoref.meta"
+file_meta_path = "./artifacts/evoref.file"
+print_file_timing = false
+
+[storage]
+cache_size = 500

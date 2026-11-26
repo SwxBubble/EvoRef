@@ -1,0 +1,15 @@
+task = "recover_all"
+chunk_data_path = "./artifacts/evoref.data"
+chunk_meta_path = "./artifacts/evoref.meta"
+file_meta_path = "./artifacts/evoref.file"
+output_dir = "./artifacts/recovered_oars"
+materialize_output = false
+print_file_timing = true
+
+[storage]
+cache_size = 500
+
+[recovery_cache]
+policy = "oars"
+decode_weight_bytes = 65536
+warm_os_cache = true

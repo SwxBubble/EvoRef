@@ -1,0 +1,5 @@
+add_library(feature STATIC features.cpp)
+
+add_executable(odess_subfeatures_test odess_subfeatures_test.cpp)
+target_link_libraries(odess_subfeatures_test feature gtest gtest_main)
+add_test(NAME odess_subfeatures_test COMMAND odess_subfeatures_test)
